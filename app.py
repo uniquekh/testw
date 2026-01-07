@@ -214,8 +214,9 @@ def get_video():
 
 if __name__ == '__main__':
     import os
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 8000))
     app.run(host='0.0.0.0', port=port)
+    
 # from flask import Flask, request, jsonify
 # from flask_cors import CORS
 # import cloudscraper
@@ -373,4 +374,5 @@ if __name__ == '__main__':
 #     import os
 #     port = int(os.environ.get('PORT', 5000))
 #     app.run(host='0.0.0.0', port=port)
+
 

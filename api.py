@@ -21,7 +21,7 @@ executor = ThreadPoolExecutor(max_workers=20)
 # Thread-local storage for scrapers (one per thread)
 thread_local = threading.local()
 
-MOBILE_API_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NjczNTY5ODgsImNvbiI6eyJpc0FkbWluIjpmYWxzZSwiYXVzZXIiOiIiLCJpZCI6ImEwdzFlRXcxTTFWM1JWbFJSM0Z4VVVGMlMwNDNRVDA5IiwiZmlyc3RfbmFtZSI6Ik4zUkxVRm94ZUdGb00ydDNjblJDYjIxQlZTOXlVVDA5IiwiZW1haWwiOiJUeXRJV21vcloweFdZMmxVZFhsb2FrMDBVR3h5YTI5Q1IwNVdURzF1YlhkQ1kzRkVObGxRU25OaVl6MD0iLCJwaG9uZSI6IkwzcDNRMjFzUnpOME5tWndka3RRUVRCbU9URnpkejA5IiwiYXZhdGFyIjoiY25JdmVETnBRekkyZFZZelZGUmxjakJCTkd4VFN5OHhWVTFQV2t4S1RGUm1OM2t6VTBzd1N6UlpaejA9IiwicmVmZXJyYWxfY29kZSI6Ik5sZEZNbk5IZVZRMFJFUkJTRk5hZWs1V0wwVmFVVDA5IiwiZGV2aWNlX3R5cGUiOiJ3ZWIiLCJkZXZpY2VfdmVyc2lvbiI6IjE0My4wLjAuMCIsImRldmljZV9tb2RlbCI6IkNocm9tZUNETSIsInJlbW90ZV9hZGRyIjoiMjQwOTo0MGQyOjFjOjUzYzpmNGRlOjY4NjA6YTQ3MDplZDI1In19.sats2j9LijCGRxh0mZchICkB_h_IpPWoIuwLknjZIQLD3wuMFBeS4MUr7asrt8Mur6fB8LTTE981tWD6sV_eUNhDhi6qVfmy5ty2zMX8K3rmVsvMZCwqg3hVIX7frlFLf1mwOA-rb4idstqcIszguD3uqzoD-mgUHs9QJbKuuSaHYgh-CNYlvPUgw6PUoQHCV3RnmuxjBycmm2jaHUwaBB3Pzr_6tNU_Fm3-WyFfPj7WUXEHoehaRvFr6o2DQpq2b2WEzrNKTaNS8JtV08OBoDHd55rkhvJbCfcORF89MyY96OSPKlFDeOzE9UkMpQbT99Yd9sTJsJ6nG2sTzAfcew"
+MOBILE_API_TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE3NzI1NTUyNzAsImNvbiI6eyJpc0FkbWluIjpmYWxzZSwiYXVzZXIiOiIiLCJpZCI6Ik4xRXZTSFoxYW1aSWRYSjRiRlJvWkZaNWNHUTFRVDA5IiwiZmlyc3RfbmFtZSI6IkszUk5TR2s1ZWs4MWJETllXRmcyUmxCQ1lrSmtaejA5IiwiZW1haWwiOiJjUzlMZVVjMmJrczFTME5vVFZSd1VtdFNaa2hwZDNSdE1tRXhSbVZOTDNjdmMwZHRXak5XWm1wak5EMD0iLCJwaG9uZSI6ImQxTmplREpGVkdaWldVbFFhVkJLUm1ZMFdrcEpVVDA5IiwiYXZhdGFyIjoiIiwicmVmZXJyYWxfY29kZSI6ImFHVjBhVk5qSzBSQ2RuUnlURVJSUVdVME0xRllRVDA5IiwiZGV2aWNlX3R5cGUiOiJ3ZWIiLCJkZXZpY2VfdmVyc2lvbiI6IjE0NS4wLjAuMCIsImRldmljZV9tb2RlbCI6IkNocm9tZUNETSIsInJlbW90ZV9hZGRyIjoiMjQwMTo0OTAwOjg2Yjc6Yzc2MjoxZDZhOjk0YzI6MjE1ZDpmOTBiIn19.GTPggSCGLjxJg1kEJuCgq1aBeowdMusdm1ZqnsxvV2iQpL_zNlo1kxR7isjLTefdbNc_HA4ROsV5ruxVaGdr5H_MxHA44llb7M1HKb-W18NToAhMXuM_3Ee5JBQVIgO0F_db1qvGfoMtwOhQ6No4drQsSHivpXoLUste8fXZbqVkGze3NBTpl-l5_MI3ncDrD2NKvck3JoB64pL5SAYrGEBuYRHq4rZObHvdu6n2VzBVqo3koV5FV-sY0zFJB2o80XgOOt69VKawMhhrNBuhx-eS50b2F0Fk4pyO3HJzVaaUzzABe4V8bqMsgcFPg74KCDPZVp_5SvYofBfc7agTRQ"
 
 
 class CryptoUtils:
@@ -45,7 +45,7 @@ def get_mobile_headers():
         "Host": "elearn.crwilladmin.com",
         "token": MOBILE_API_TOKEN,
         "usertype": "",
-        "appver": "124",
+        "appver": "226",
         "apptype": "android",
         "cwkey": crypto.generate_cwkey_datetime(),
         "accept-encoding": "gzip",
@@ -601,6 +601,7 @@ if __name__ == '__main__':
 # #     import os
 # #     port = int(os.environ.get('PORT', 5000))
 # #     app.run(host='0.0.0.0', port=port)
+
 
 
 

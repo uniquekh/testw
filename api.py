@@ -130,7 +130,7 @@ def fetch_video_details(vid_id, batch_id="3347", token=None):
         "Host": "elearn.crwilladmin.com",
         "token": token if token else MOBILE_API_TOKEN,
         "usertype": "",
-        "appver": "124",
+        "appver": "226",
         "apptype": "android",
         "cwkey": crypto.generate_cwkey_datetime(),
         "accept-encoding": "gzip",
@@ -601,6 +601,7 @@ if __name__ == '__main__':
 # #     import os
 # #     port = int(os.environ.get('PORT', 5000))
 # #     app.run(host='0.0.0.0', port=port)
+
 
 
 
